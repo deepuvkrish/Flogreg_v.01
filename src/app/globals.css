@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --blue: #03a9f4;
+  --lightGray: #c4c4c4;
+  --gray: #717171;
+  --darkGray: #575757;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 720px) {
+}
+@media only screen and (min-width: 720px) {
+  body {
+    background: white;
+  }
+  .main_logo {
+    position: absolute;
+    top: 2%;
+    left: 1%;
+  }
+  .landing_message_section {
+    z-index: 4;
+    padding-left: 2rem;
+  }
+  .landing_message_section h3 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--lightGray);
+    text-transform: capitalize;
+  }
+  .login_box {
+    background: #ffffff;
+    position: relative;
+    z-index: 90;
+    margin-right: 5rem;
+  }
+
+  .log_input:focus {
+    color: rgb(86, 86, 86);
+  }
+  .log_icon {
+    color: rgb(113, 112, 112);
+  }
+  .landinglottie {
+    width: 400px;
+  }
+  .wavefront {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 3;
+  }
+  .waveback {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+  }
+  .travellandinglottie {
+    position: absolute;
+    bottom: 24%;
+    width: 400px;
+    left: 0;
+    z-index: 2;
+  }
+}
