@@ -1,35 +1,36 @@
 "use client";
 
 import Image from "next/image";
-import Login from "./login/page";
 import React from "react";
-import Lottie from "lottie-react";
-import wavef from "@/app/assets/lottie/wavefront.json";
-import waveb from "@/app/assets/lottie/waveback.json";
-import travelanimation from "@/app/assets/lottie/travelb.json";
+
+import RegSign from "@/app/components/RegSign";
+import Footer from "@/app/components/static/Footer";
 
 export default function Home() {
   return (
-    <div className="flex w-svw h-svh justify-end items-center">
-      <div className="flex-col main_logo mt-8">
-        <Image
-          src="/logo/futb1.png"
-          width={500}
-          height={300}
-          alt="Picture of the logo"
-        />
-        <div className="landing_message_section flex items-center">
-          <h3>Assisting you on your every other requirements.</h3>
+    <div className="flex flex-col w-svw h-svh justify-center items-center landing_page">
+      <div className="flex flex-col sm:flex-row h-3/4 w-full justify-center items-center ">
+        <div className="flex flex-col w-full sm:w-[65%] h-[100px] sm:h-full justify-center items-center ">
+          <Image
+            src="/logo/futb1.png"
+            width={500}
+            height={300}
+            alt="Picture of the logo"
+            className="mainlogoImg"
+            priority
+          />
+          <h3 className="landing_msg">
+            Assisting you on your every other requirements.
+          </h3>
+        </div>
+        <div className="flex w-full sm:w-[35%] h-full justify-center items-center">
+          <RegSign />
         </div>
       </div>
-      <Lottie animationData={wavef} loop={true} className="wavefront" />
-      <Lottie
-        animationData={travelanimation}
-        loop={true}
-        className="travellandinglottie"
-      />
-      <Lottie animationData={waveb} loop={true} className="waveback" />
-      <Login />
+
+      <div className="flex h-[150px] sm:h-1/4 w-full justify-center items-center">
+        <Footer />
+      </div>
     </div>
   );
 }
