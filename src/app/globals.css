@@ -234,6 +234,22 @@ body {
   height: 48px;
 }
 
+/* FOOTER */
+.footerTitle {
+  margin-block: 10px;
+}
+.footerTitle span {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  font-size: 13px;
+}
+.footerLinkBox span {
+  margin-block: 5px;
+  color: #a8a8a8;
+  font-size: 12px;
+}
+
 /*ICONS*/
 
 .Icongoogle {

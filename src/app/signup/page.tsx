@@ -50,6 +50,11 @@ export default function Signup() {
       SetShowPassText("Show");
     }
   };
+
+  const clearWarning = (): void => {
+    setWarning("");
+  };
+
   return (
     <div className="flex flex-col h-auto w-[400px] rounded-2xl justify-center items-center">
       <h2 className="text-3xl logTitle">Signup</h2>
@@ -93,6 +98,7 @@ export default function Signup() {
           id="floatingInput"
           value={userpass}
           onChange={handleUserPass}
+          onBlur={clearWarning}
           className={userpass ? "has-content" : ""}
         />
         <label htmlFor="floatingInput">Enter Password</label>
