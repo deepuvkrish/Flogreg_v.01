@@ -18,16 +18,19 @@ const RegSign: React.FC = () => {
         {isLogin ? <Login /> : <Signup />}
         <div className="toggle-button h-[10%]">
           {isLogin ? (
-            <span className="text-white">
+            <span className="text-white text-sm">
               New to Here?
-              <span className="linkColor" onClick={handleToggle}>
+              <span className="linkColor text-[16px]" onClick={handleToggle}>
                 Sign Up
               </span>
             </span>
           ) : (
-            <span className="text-white">
+            <span className="text-white text-sm">
               Already have an account?
-              <span className="linkColor" onClick={handleToggle}>
+              <span
+                className="linkColor text-[16px] font-extrabold"
+                onClick={handleToggle}
+              >
                 Login
               </span>
             </span>

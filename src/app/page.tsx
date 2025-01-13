@@ -28,7 +28,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex h-[150px] sm:h-1/4 w-full justify-center items-center">
+      <div className="flex h-[150px] sm:h-1/4 w-full justify-end items-center">
         <Footer />
       </div>
     </div>

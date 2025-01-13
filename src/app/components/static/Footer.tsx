@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="flex h-full w-[90%] justify-center items-center">
+    <div className="flex h-full w-[90%] justify-end items-center">
       <div className="flex flex-col w-1/4 h-full">
         <div className="footerTitle">
           <span>Company</span>
