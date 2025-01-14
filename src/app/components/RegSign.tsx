@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 
-import Login from "../login/page";
-import Signup from "../signup/page";
+import Login from "@/app/components/login/page";
+import Signup from "@/app/components/signup/page";
 
 const RegSign: React.FC = () => {
   const [isLogin, setIsLogin] = useState(true); // Toggle between Login and Register
