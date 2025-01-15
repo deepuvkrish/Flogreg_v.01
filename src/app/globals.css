@@ -229,6 +229,9 @@ body {
 .logIconBox:hover {
   background: #0c3c54;
 }
+.log_btn {
+  min-height: 35px;
+}
 .fcgoogle {
   width: 48px;
   height: 48px;
