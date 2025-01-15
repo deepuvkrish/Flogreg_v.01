@@ -23,3 +23,15 @@ export async function authenticate(
     throw error;
   }
 }
+
+
+export async function createUser(formData: FormData) {
+    const rawFormData = {
+        username: formData.get('username'),
+        email: formData.get('email'),
+        phone: formData.get('phone'),
+        password: formData.get('password'),
+      };
+
+      console.log(rawFormData);
+}

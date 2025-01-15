@@ -8,7 +8,7 @@ import { IoMdLock } from "react-icons/io";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 // import { ftUsers } from "@/app/lib/defininitions";
 
-// import { createUser } from "@/app/lib/actions";
+import { createUser } from "@/app/lib/actions";
 
 // import toast, { Toaster } from "react-hot-toast";
 // const notify = () => toast("⚠️ Login in work!");
@@ -57,12 +57,13 @@ export default function Signup() {
   return (
     <div className="flex flex-col h-auto w-[400px] rounded-2xl justify-center items-center">
       <h2 className="text-3xl logTitle">Signup</h2>
-      <form className="flex flex-col h-auto items-center">
+      <form action={createUser} className="flex flex-col h-auto items-center">
         <div className="logFieldBox flex relative w-[370px] justify-center items-center floating-input-container">
           <FaUser className="log_icon" />
           <input
             type="text"
             id="futusername"
+            name="username"
             value={username}
             onChange={handleUserName}
             className={username ? "has-content" : ""}
@@ -74,6 +75,7 @@ export default function Signup() {
           <input
             type="text"
             id="futuseremail"
+            name="email"
             value={useremail}
             onChange={handleUserMail}
             className={useremail ? "has-content" : ""}
@@ -85,6 +87,7 @@ export default function Signup() {
           <input
             type="text"
             id="futuserphone"
+            name="phone"
             value={userphone}
             onChange={handleUserPhone}
             className={userphone ? "has-content" : ""}
@@ -96,6 +99,7 @@ export default function Signup() {
           <input
             type={showPass}
             id="futuserpass"
+            name="password"
             value={userpass}
             onChange={handleUserPass}
             onBlur={clearWarning}
