@@ -15,3 +15,13 @@ export type ftUsers = {
 }
 
 
+
+
+export type ftRegistration = {
+    username:string;
+    email:string;
+    phone:string;
+    password:string;
+}
+
+
