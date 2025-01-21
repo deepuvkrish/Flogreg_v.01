@@ -1,6 +1,6 @@
 # About:
 
-Futuraa.com is an virtual personal assistant. A solution for everyday news - product checks, e-shop comparisons, Health Check and Doctor appointments, Event Planner - Remainder, All in one messager.
+Futuraa.com is an virtual personal assistant application. A solution for everyday news - product checks, e-shop comparisons, Health Report and Doctor appointments, Event Planner - Remainder, All in one messager.
 
 # Tech Stack Used: 
 ![image](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
